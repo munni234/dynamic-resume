@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Resume  dynamic</title>
+    <Link rel="stylesheet" href="dynamic.css">
+</head>
+<body>
+    <div id="resume-head">
+    <h4>Resume Builder By Faiza Mushtaq</h4>
+</div>
+
+<div id="res-main-cont">
+    <p>Fill the below form and get the resume as per your data.</p>
+    <form id="form">
+       
+        <section>
+            <h4>Personal Information</h4>
+            <label >Full Name</label>
+            <input placeholder="Enter your Name" autocomplete="on" required type="text" id="name" >
+        </br>
+        <label >Phone Number:</label>
+        <input placeholder="Enter your Contact number" type="number" id="cont-num" required>
+    </br>
+    <label >Email:</label>
+    <input placeholder="Enter your Email" type="email" id="email" required>
+        </section>
+        <section>
+            <h4>Education</h4>
+            <label >Matriculation</label>
+            <input placeholder="Enter your Matriculation degree" type="text" id="matric" required>
+        </br>
+        <label >Intermediate</label>
+        <input placeholder="Enter your Intermediate degree" type="text" id="inter-edu" >
+    </br>
+    <label >Higher Education</label>
+    <input placeholder="Enter your Higher education degree" type="text" id="higher-ed">
+        </section>
+
+        <section >
+            <h4>Skills</h4>
+            <label >Skill</label>
+            <input placeholder="Enter your Skills" id="ski1" type="text" required>
+            <input placeholder="Enter your Skills" id="ski2" type="text" required>
+            <input placeholder="Enter your Skills" id="ski3" type="text" required>
+            <input placeholder="Enter your Skills" id="ski4" type="text">
+        </section>
+
+        <section>
+            <h4>Related to job</h4>
+            <label >Tittle</label>
+            <input placeholder="Enter your job tittle" id="job-tit" type="text" required >
+            <br></br>
+            <label>Description</label>
+            <input placeholder="Enter your job description" type="text" id="job-des" required>
+            
+            <label>Company Name</label>
+            <input placeholder="Enter your company name" type="text" id="comp-name" required>
+        </section>
+                   
+        <section>
+            <h4>Work Experience</h4>
+            <label >Comments on Prior company/Experience</label>
+            <input placeholder="Enter your comments about previous company or work experience" id="pre-comp" type="text" required >
+            <br/>
+
+            <label >start Year</label>
+            <input placeholder="Enter your previous job starting year" required id="start-yr" type="date" >
+            <br></br>
+            <label>End Year</label>
+            <input placeholder="Enter your previous job ended year" required type="date" id="end-yr">
+            <label>Location</label>
+            <input placeholder="Enter the address " type="text" required id="work-loc">
+        </section>
+
+        <section>
+            <h4>Language</h4>
+            <label >Language 1:</label>
+            <input placeholder="Enter your language" required id="lang-one" type="text" >
+            <br></br>
+            <label>Language 2:</label>
+            <input placeholder="Enter your language" required type="text" id="lang-two">
+            
+        </section>
+
+        <section>
+            <h4>Achievements</h4>
+            <label >achievement</label>
+            <input placeholder="Enter your achievement in two/three words" required id="ahieve1" type="text" >
+            <input placeholder="Enter your achievement in two/three words" required id="ahieve2" type="text" >
+            <input placeholder="Enter your achievement in two/three words" id="ahieve3" type="text" >
+            <input placeholder="Enter your achievement in two/three words" id="ahieve4" type="text" >
+        </section>
+
+        <button id="gen-res-btn" type="submit">Generate Resume</button>
+    </form>
+
+   
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
